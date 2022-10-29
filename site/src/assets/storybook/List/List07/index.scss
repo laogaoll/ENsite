@@ -1,0 +1,93 @@
+@import '../../public/var.scss';
+
+.sc-list07 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--sys-wid);
+  margin: auto;
+  background: #fff;
+  
+  .line {
+    border-bottom: 1px none rgb(238, 238, 238);
+  }
+  .m-bd {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    .m-item {
+      display: flex;
+      flex-direction: row;
+      padding: 30px 0;
+      font-weight: bold;
+      font-size: 1.6rem;
+      * {
+        margin: 6px 0;
+      }
+      & > .m-lt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 35%;
+        padding: 0 1.6rem;
+        & > .title {
+          color: var(--clr-main);
+          text-align: center;
+          font-size: 2.5rem;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          white-space:nowrap;
+          max-width: 80%;
+        }
+        & > .label {
+          margin: unset;
+          color: gray;
+          font-size: 1.4rem;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          white-space:nowrap;
+          max-width: 50%;
+        }
+      }
+      & > .m-rt {
+        width: 50%;
+        & > .m-cnt {
+          margin-top: -0.2rem;
+          line-height: 4rem;
+        }
+        & > .m-p {
+          text-indent: 3rem;
+        }
+      }
+    }
+    .m-bdy {
+      & + .m-bdy{
+        border-top: 1px solid #eee;
+      }
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: $screen ) {
+  .sc-list07 {
+    .m-item {
+      flex-direction: column !important;
+      align-items: center;
+      & > .m-lt {
+        width: 80% !important;
+        padding: 0 1.6rem;
+      }
+      & > .m-rt {
+        width: 100% !important;
+        padding: 0 1.6rem;
+      }
+    }
+    .m-cnt {
+      margin-top: unset !important;
+    }
+  }
+}

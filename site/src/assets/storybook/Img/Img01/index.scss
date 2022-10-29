@@ -1,0 +1,118 @@
+@import '../../public/var.scss';
+.sc-Img01 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--sys-wid);
+  margin: auto;
+  background: #fff;
+  .m-bd {
+    display: flex;
+    flex-direction: column;
+
+    .m-item {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      padding: 30px 0;
+      font-size: 1.4rem;
+      * {
+        margin: 6px 0;
+      }
+
+      .m-img {
+        width: 35rem;
+        height: 100%;
+        margin: unset;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .m-cnt {
+        width: 50%;
+        // text-align: center;
+        margin-left: 10px;
+        & + .m-item {
+          border-top: 1px solid #eee;
+        }
+
+        .m-ti {
+          color: #000;
+          font-size: 1.2rem;
+
+          label {
+            padding: 0.5rem;
+            background-color: rgb(179, 194, 229);
+          }
+        }
+
+        .m-tl {
+          margin-top: 10px;
+          color: #000;
+          font-size: 1.2rem;
+          label {
+            padding: 0.5rem;
+            background-color: #f5f5f5;
+          }
+        }
+
+        & > .m-wd {
+          margin-top: 10px;
+
+          & > p,
+          & > span {
+            color: #333;
+            font-weight: bold;
+            line-height: 30px;
+            letter-spacing: 1.6px;
+            text-indent: 3rem;
+            & + li {
+              margin-top: 15px;
+            }
+          }
+
+          & > li {
+            color: #333;
+            letter-spacing: 1.6px;
+
+            &.np {
+              list-style: none;
+            }
+
+            & + li {
+              margin-top: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 500px) {
+  .sc-Img01 {
+    .m-item {
+      flex-direction: column !important;
+      align-items: center;
+      & > .m-img{
+        width: 100%!important;
+      }
+    }
+    .m-lab {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .m-tl {
+      margin-top: unset !important;
+    }
+    .m-cnt {
+      width: 100% !important;
+    }
+  }
+}

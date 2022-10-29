@@ -1,0 +1,94 @@
+{
+    "homePage":{
+        "navigation":["体检项目","医疗项目","医疗美容","体检申请流程"],
+        "Carousel":{
+                        "title":"一恩赴日本医疗体检咨询中心",
+                        "color":"#333",
+                        "background":"#fff",
+                        "line":true,
+                        "list":[{
+                            "img":"https://mqcai.top/cdn/carousel01.jpg",
+                            "txt":"info 1"
+                            },{
+                                "img":"https://mqcai.top/cdn/carousel02.jpg",
+                                "txt":"info 2"
+                            },{
+                                "img":"https://mqcai.top/cdn/carousel03.jpg",
+                                "txt":"info 3"
+                            },{
+                                "img":"https://mqcai.top/cdn/carousel04.jpg",
+                                "txt":"info 4"
+                            }
+                        ],
+                        "text":true
+
+                    },
+    "PMB":{
+        "title":"一恩赴日本医疗体检咨询中心",
+        "color":"#333",
+        "background":"#fff",
+        "line":false,
+        "list":[
+            {
+                "img":"http://www.jmtc-china.com/upload/2018-03/27/jiankangtijianditu.jpg",
+                "title":"体检项目",
+                "label":"",
+                "cnt":"采用世界领先的日本体检诊断设备与技术，更早发现健康风险，贴心周到的服务，让您感受独一无二的日式体检文化。一恩三大疾病豪华体检套餐、一恩癌症综合套餐、一恩癌、脑豪华体检套餐、一恩PETCT癌症专项体检、一恩PETCT癌+脑体检",
+                "change":false
+            },{
+                "img":"http://www.jmtc-china.com/upload/2018-03/26/pic3-da033.jpg",
+                "title":"医疗项目",
+                "label":"",
+                "cnt":"更多的新药、新技术,更个性化的诊疗模式,更多的临床试验机会,更人性化的就医体验,国际新药、新型疗法、专家医生医院一网打尽，缓解与治愈国内束手无策的疑难病症。",
+                "change":true
+            },{
+                "img":"https://www.seishin-biyou.jp/content/uploads/2022/02/04165454/ad_img_contents_ad_aging_p-prp_img__kv_pc_01.jpg",
+                "title":"医疗美容",
+                "cnt":"日本知名名医为您亲自操刀，解决一切苦恼，让变美这件事安全、自然、长久。优质 PRP 皮肤再生疗法是一种使用您自己的血液（血小板）的抗衰老注射剂。它是一种“注射剂”，通过使用一种称为再生组织的生长因子成分的作用来增加皮肤本身的组织并改善皱纹和凹痕。随着优质 PRP 皮肤再生疗法的出现，您可以期望用自己的血液改善症状。",
+                "label":"",
+                "change":false
+            }
+        ],
+        "change":true,
+        "label":true
+    },
+    "Parterns":{
+        "title":"一恩赴日本医疗体检咨询中心",
+        "color":"#333",
+        "background":"#fff",
+        "line":false,
+        "list":[
+            {
+                "img":"http://www.yienconsulting.com/Images/institutions/wyd_11.jpg",
+                "title":"日本外苑东体检中心",
+                "cnt": "一恩医疗体检咨询签约合作伙伴之一，宇野院长是把PET/CT（癌症体检）引入个人体检的第一人， 不但拥有最新仪器，更有体检界的权威坐诊，每一个体检套餐都渗透着专业人士的精髓。"
+            },
+            {
+                "img":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.keguanjp.com%2Fkgjp_keji%2Fimgs%2F2020%2F06%2F20200605_1_01.jpg&refer=http%3A%2F%2Fwww.keguanjp.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1669620686&t=a7b1f65faff57f5d10dc1e57e4999347",
+                "title":"粒子线癌症治疗中心",
+                "cnt": "一恩医疗体检咨询中心的签约合作方是聚集了全日本的重离子治疗机构， 由重离子治疗机构的医生轮流出诊，对患者来说既减轻了奔于各治疗中心的麻烦，也为治疗获取了宝贵的时间 （本中心掌握着各重离子治疗机构的预约状况），医生诊断符合治疗条件后可直接以最短时间进入治疗。"
+            }
+        ],
+        "id":true
+    },
+        "bottom":{
+            "title":"一恩赴日本医疗体检咨询中心",
+            "eng":"EN.COM",
+            "address":"京ICP备15039566号",
+            "list":[
+                {
+                    "title":"联系电话: ",
+                    "number":"0081-8058975168"
+                },
+                {
+                    "title":"联系人: ",
+                    "contacts":"贾城 园"
+                },{
+                    "title":"微信号: ",
+                    "vx":"wozaidongjing"
+                }
+            ]
+        }
+    }
+
+}

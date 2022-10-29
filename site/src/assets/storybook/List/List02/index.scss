@@ -1,0 +1,79 @@
+@import '../../public/var.scss';
+
+.sc-list02 {
+  display: flex;
+  flex-direction: column;
+  background:#fff;
+
+  .m-bd {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    .m-item {
+      display: flex;
+      padding: 30px 0;
+      font-size: 1.6rem;
+      width: calc( 50% - 20px );
+      font-weight: bold;
+      box-sizing: border-box;
+      position:relative;
+      color: #333;
+
+
+      &.dash {
+        border-bottom: 1px dashed #ddd;
+      }
+
+      &.icon {
+        padding-left: 25px;
+
+        &:after {
+          display: block;
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 9px;
+          height: 4px;
+          border-left: 3px solid #54c1c8;
+          border-bottom: 3px solid #54c1c8;
+          -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+        }
+      }
+
+      &:nth-child(2n+1) {
+        margin-left: 0!important;
+      }
+
+      &+.m-item {
+        margin-left: 40px;
+      }
+
+    }
+  }
+}
+
+
+@media screen and (max-width: $screen ) {
+
+  .sc-list02 {
+    padding: 0 10px;
+
+    &>.m-bd {
+
+      &>.m-item {
+        padding: 10px 0;
+        font-size: 1rem;
+        width: calc( 50% - 10px );
+
+        &+.m-item {
+          margin-left: 20px;
+        }
+
+      }
+    }
+  }
+
+}

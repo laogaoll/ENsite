@@ -1,0 +1,145 @@
+@import '../../public/var.scss';
+
+
+.sc-list05 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--sys-wid);
+  background: #fff;
+
+  .m-bd {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+    .m-item {
+      display: flex;
+      flex-direction: column;
+      width: calc( (100% - 40px)/3 );
+      padding: 20px 0 0;
+      box-sizing: border-box;
+      font-size: 1.4rem;
+      color: #333;
+      border: 1px solid #ddd;
+      padding: 1.5rem;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      position:relative;
+      box-sizing: border-box;
+      text-align: justify;
+
+      &.ossm {
+        border-bottom: 3px solid var(--clr-main);
+      }
+
+      &+.m-item {
+        margin-left: 20px;
+      }
+
+      &:nth-child(3n+1) {
+        margin-left: 0;
+      }
+
+
+      .m-icon {
+        position: absolute;
+        text-align: center;
+        right: -1rem;
+        top: -1rem;
+        width: 50px;
+        height: 50px;
+      }
+
+      &>label {
+        font-size: 1.8rem;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+        color: #333;
+      }
+
+      &>span {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      &>p {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: self-end;
+        margin: 0;
+
+        &>a {
+          padding: 0 5px;
+          border: 1px solid var(--clr-main);
+          color: var(--clr-main);
+          font-size: 12px;
+          transition: all 0.2s ease;
+          height: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: bold;
+          cursor: pointer;
+
+          &:hover {
+            background: var(--clr-main);
+            color: #fff;
+          }
+        }
+      }
+
+      
+
+      &.icon {
+        padding-left: 25px;
+
+      }
+
+    }
+  }
+}
+
+
+
+@media screen and (max-width: $screen ) {
+
+  .sc-list05 {
+    .m-bd {
+      .m-item {
+        width: calc( (100% - 10px)/2 );
+        font-size: 1rem;
+
+        &+.m-item {
+          margin-left: 10px;
+        }
+
+        &:nth-child(2n+1) {
+          margin-left: 0;
+        }
+
+        .m-icon {
+          right: -1rem;
+          top: -1rem;
+          width: 40px;
+          height: 40px;
+        }
+
+        &>label {
+          font-size: 1.4rem;
+          padding-bottom: 10px;
+        }
+
+        &>p {
+
+          &>a {
+            margin-top: 10px;
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+
+}

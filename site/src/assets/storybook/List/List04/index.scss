@@ -1,0 +1,74 @@
+@import '../../public/var.scss';
+
+.sc-list04 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--sys-wid);
+  background:#fff;
+
+  .m-bd {
+    display: flex;
+    flex-direction: column;
+
+    .m-item {
+      display: flex;
+      padding: 20px 0 0;
+      box-sizing: border-box;
+      font-size: 1.8rem;
+      color: #333;
+      font-weight: bold;
+
+
+      &>label {
+        align-self: flex-start;
+        width: 20%;
+        text-align: right;
+        padding-bottom: 5px;
+        border-bottom: 2px solid transparent;
+
+
+        &.icon {
+          border-bottom: 2px solid var(--clr-main);
+        }
+      }
+
+      &>p {
+        margin: 0 0 0 30px;
+        flex:1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      &.icon {
+        padding-left: 25px;
+
+      }
+
+    }
+  }
+}
+
+
+
+@media screen and (max-width: $screen ) {
+
+  .sc-list04 {
+
+    .m-bd {
+
+      .m-item {
+        font-size: .9rem;
+
+        &>label {
+          width: 25%;
+        }
+
+        &>p {
+          margin: 0 0 0 20px;
+        }
+      }
+    }
+  }
+
+}

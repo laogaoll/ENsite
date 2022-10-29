@@ -1,0 +1,66 @@
+@import '../../public/var.scss';
+.sc-img04 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background:#fff;
+  max-width: var(--sys-wid);
+  margin:0 auto;
+
+  .m-img {
+    margin: 15px 0;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover !important;
+    }
+  }
+
+  .m-bd{
+    display: flex;
+    
+    .m-title{
+      font-size: 24px;
+      margin-right: 15px;
+      text-align: center;
+      width: calc((100% - 15px)/2);
+
+      &>span{
+        color: var(--clr-main);
+        border-bottom: none;
+        padding-bottom: 10px;
+      }
+    }
+
+    .m-cnt{
+      width: calc((100% - 15px)/2);
+      font-size: 1.6rem;
+      text-indent: 3rem;
+    }
+
+    .line{
+      &>span{
+        color: #000;
+        border-bottom: 4px solid var(--clr-main);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sc-img04{
+    
+    .m-bd{
+      flex-direction: column;
+  
+      .m-title{
+        margin:0 0 25px 0 !important;
+      }
+  
+      .m-cnt,.m-title{
+        width: 100% !important;
+      }
+    }
+  }
+}

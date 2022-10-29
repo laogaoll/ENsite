@@ -1,0 +1,52 @@
+$bgColor:#eee;
+
+.sc-img05 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background:#fff;
+  max-width: var(--sys-wid);
+  margin:0 auto;
+
+  .m-img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.9375rem 0;
+
+    & > img {
+      width: 36%;
+      object-fit: cover !important;
+    }
+
+    & + .m-img{
+      margin-top:0;
+    }
+
+    &+div{
+      margin: 10px 0;
+    }
+  }
+
+  .bg{
+    background-color: $bgColor;
+    padding: 3px;
+  }
+
+  .m-cnt{
+    font-size: 1.6rem;
+    text-indent: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sc-img05{
+    .m-img {
+      flex-direction: column;
+  
+      & > img{
+        width: 100% !important;
+      }
+    }
+  }
+}

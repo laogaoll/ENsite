@@ -1,0 +1,40 @@
+.sc-title1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+    margin: 20px 0;
+    border-bottom: 0.3rem solid transparent;
+    color: var(--clr-main);
+    //transition: border-bottom,0.9s;
+    // &.line {
+    //   border-bottom: 1px solid #eee;
+    //   color: var(--clr-main);
+  
+    //   &>span {
+    //     border-bottom: 4px solid transparent;
+    //   }
+    // }
+  
+    &>span {
+      display: inline-block;
+      //border-bottom: 4px solid var(--clr-main);
+      font-size: 24px;
+      font-weight: normal;
+      padding-bottom: 10px
+    }
+  }
+  .sc-title1:hover{
+    border-bottom: 0.3rem solid var(--clr-main2);
+    color: var(--clr-main2);
+  }
+  
+  @media screen and (max-width: 900px) {
+  
+    .sc-title1 {
+  
+      &>span {
+        font-size: 20px;
+      }
+    }
+  
+  }

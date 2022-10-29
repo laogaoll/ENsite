@@ -1,0 +1,163 @@
+@import '../../public/var.scss';
+
+.sc-list06 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--sys-wid);
+  background: #fff;
+
+  .m-bd {
+    display: flex;
+    flex-wrap: wrap;
+
+    .m-item {
+      display: flex;
+      flex-direction: column;
+      width: calc( 50% - 30px );
+      box-sizing: border-box;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: bold;
+
+      &+.sc-list06 {
+        margin-left: 60px;
+      }
+
+      &:nth-child(2n+1) {
+        margin-left: 0!important;
+      }
+
+      &>.m-tl {
+        color: var(--clr-main);
+        font-size: 2.4rem;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 10px 0px;
+        line-height: 1.4;
+      }
+
+      &>.m-ossm {
+        background: var(--clr-sub);
+        color: var(--clr-main);
+        font-size: 16px;
+        text-align: center;
+        padding: 5px;
+        letter-spacing: 2px;
+      }
+
+      &>.m-rec {
+        display: flex;
+        flex-direction: column;
+        background:var(--clr-main);
+        color: #fff;
+        padding: 10px 15px;
+
+
+        &>li {
+          margin: 5px;
+        }
+      }
+
+      &>.m-desc {
+        padding: 10px 0;
+        line-height: 2;
+        color: #000;
+      }
+      &>.m-ft {
+        padding: 15px 10px;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+
+        &>.m-list {
+          display: flex;
+          flex-direction: column;
+          font-size: 1.4rem;
+          font-weight: bold;
+          
+
+          &+.m-list {
+            margin-top: 20px;
+          }
+
+          &>.m-row {
+            display: flex;
+            align-items: center;
+
+            &:nth-child(1):after {
+              order: 2;
+              margin: 0 1rem;
+              content: '';
+              display: block;
+              height: 3px;
+              flex-grow: 1;
+              background-image: linear-gradient(to right, #000, #000 3px, transparent 3px, transparent 6px);
+              background-size: 6px 1px;
+              background-repeat: repeat-x;
+            }
+
+            &>span {
+              font-size: 1.2rem;
+              color: #999;
+              margin-top: 5px;
+            }
+
+            &>label {
+              color: #000;
+              order: 1;
+            }
+
+            &>em {
+              order: 3;
+              font-style:normal;
+              color: #dd0000;
+              font-size: 1.6rem;
+              
+
+              &:after {
+                content: '円(税込)';
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+
+        &>.m-fn {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 10px;
+
+          a {
+            font-size: 1.2rem;
+            padding: 2px 5px;
+            color: var(--clr-main);
+            border: 1px solid var(--clr-main);
+            transition: all 0.2s ease;
+
+            &:hover {
+              background: var(--clr-main);
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen ) {
+
+  .sc-list-price {
+    .m-item {
+      width: 100%;
+
+      &+.m-item {
+        margin: 0!important;
+      }
+    }
+
+  }
+}

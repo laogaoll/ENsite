@@ -1,0 +1,12 @@
+//:root表示<html>元素,除了优先级更高之外，与html选择器相同
+:root {
+  --clr-wid: 1250px;
+  --clr-wid-2: 1650px;
+  --clr-main: #222A4D;
+  --clr-main2: #Be6e46;
+  --clr-gru: #B69E85;
+  --clr-ebo: #59594A;
+  --clr-Shabule: #7286A0;
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+}

@@ -1,0 +1,114 @@
+@import '../../public/var.scss';
+
+
+.sc-list09 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--sys-wid);
+  margin: auto;
+  background: #fff;
+
+  .sc-title {
+    justify-content: left;
+    margin: 1rem;
+  }
+  .line {
+    border-bottom: 1px none #eee;
+  }
+  .m-bd {
+    display: flex;
+    flex-direction: column;
+
+    .m-item {
+      width: 100%;
+      padding: 1rem 0;
+      font-weight: bold;
+      font-size: 1.6rem;
+      * {
+        margin: 6px 0;
+      }
+      & > .m-bdy {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        & > .m-lt {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          width: 50%;
+          align-items: center;
+          
+
+          & > .m-lb {
+            display: block;
+            width: 120px;
+            min-width: 120px;
+            padding: 6px 10px;
+            color: #fff;
+            border-radius: 6px;
+            font-size: 1.6rem;
+            text-align: center;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+            background-color: var(--clr-main );
+          }
+          & > .title {
+            width: max-content;
+            max-width: 60%;
+            margin: 6px 2rem;
+            color: var(--clr-main);
+            font-size: 2.5rem;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+          }
+        }
+        & > .m-cnt {
+          max-width: 50%;
+          line-height: 3.2rem;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          white-space:nowrap;
+        }
+      }
+      .m-line {
+        border-bottom: 2px solid var(--clr-sub);
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: $screen ) {
+  .sc-list09 {
+    .m-bdy {
+      flex-direction: column !important;
+      align-items: center !important;
+      font-size: 1.4rem !important;
+      & > .m-lt {
+        width: 100% !important;
+        padding: 0 1.6rem;
+        justify-content: space-around;
+        & > .m-lb {
+          width: 40% !important;
+          font-size: 1.6rem !important;
+        }
+        & > .title {
+          width: 60% !important;
+          font-size: 2rem !important;
+        }
+      }
+      & > .m-cnt {
+        max-width: 90% !important;
+        margin-top: 1rem !important;
+      }
+    }
+    .m-cnt {
+      margin-top: unset !important;
+    }
+  }
+}

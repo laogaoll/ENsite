@@ -1,0 +1,106 @@
+.g-index{
+    background-color: #f5f5f5;
+}
+
+.home{
+    //position: relative;
+    background-color: #fff;
+    width: 63.2%;
+    margin: auto;
+    //margin-top: 20rem;
+    height: auto;
+    .sc-title.line{
+        color:var(--clr-main) !important;
+    }
+
+    .m-hd{
+        position: relative;
+        left: 40px;
+        top: 50px;
+        width: 90%;
+        height: 50px;
+        padding: 0 10px 0 34px;
+        border-bottom: 5px solid var(--clr-main2);
+        background-color: #fff;
+        h1{
+            float: left;
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 18px;
+            font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+            color: var(--clr-main);
+        }
+        .tab{
+            float: left;
+            margin: 7px 0 0 20px;
+            a{
+                color: var(--clr-Shabule);
+                font-size: 1rem;
+            }
+            span{
+                margin: 0 10px;
+                color: var(--clr-Shabule);
+            }
+        }
+    }
+    .sc-Img03{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        .m-img{
+            width: 45% !important;
+        }
+        .m-rt{
+            .m-cnt{
+                height: 100%;
+                overflow: visible !important;
+                color: var(--clr-Shabule);
+                font-size: 2rem !important;
+               
+            }
+            .sc-title{
+                color: var(--clr-main) !important;
+                font-size: 3rem !important;
+                span{
+                    font-size: 3rem !important;
+                }
+            }
+        }
+    }
+    .u-title{
+        position: relative;
+        left: 40px;
+        //top: 50px;
+          width: 90%;
+          height: 50px;
+          padding: 0 10px 0 34px;
+          background-color: #fff;
+          border-bottom: 5px solid var(--clr-main2);
+          h1{
+            float: left;
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 18px;
+            font-family:  "Microsoft Yahei", Arial, Helvetica, sans-serif;
+            color: var(--clr-main);
+          }
+      }
+      .sc-Img01{
+        padding-left: 60px;
+        .m-ti{
+            label{
+               // background-color: var(--clr-Shabule);
+                color: var(--clr-main2);
+                font-size: 2rem !important;
+            }
+        }
+        .m-cnt{
+            margin-left: 80px !important;
+            margin-right: 20px !important;
+        }
+        .m-wd{
+            p{
+                font-size: 1.5rem;
+            }
+        }
+      }
+}
